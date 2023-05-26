@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="huvud_div">
+        <!-- i denna h1 taggen finns en div och i diven så kommer texten ändras till Good vibes. -->
+        <h1><div id="goodvibes"></div></h1>
+
+    <!-- Den visar den aktuella tiden då knappen Time trycks. -->
+        <div id="tid"></div>
+        <br>
+        <div id="bild">
+            <img  src="punkt.png" height="180vh" width="180vh" id="id_bild">
+        </div>
+    </div>
+    <!-- En div där alla knappar visas Det finns divs i denna diven för att det är enklare att strukturera knapparna . -->
+    <div id="knapparDiv">
+
+        <!-- Alla knappar har samma klass namn för att de ska se likadana ut och de kommer tilldeas olika funktioner i nästa del av projektet -->
+
+        <div>
+            <button class="allaknappar"  onclick="ändra_färg()" >Change Bg</button>
+            <button class="allaknappar" onclick="goodvibes_rubrik()">Good vibes</button>
+            <button class="allaknappar" onclick="tid_nu()">Time</button>
+        </div>
+
+        <div>
+            <button class="allaknappar"  onclick="bytt_bild()">Change Picture</button>
+            <button class="allaknappar" onclick="göm_bild()">Hide picture</button>
+            <button class="allaknappar" onclick="vissa_bild()" >Show picture</button>
+        </div>
+
+        <div>
+            <button class="allaknappar" onclick="ändra_header()">Header</button>
+            <button class="allaknappar" onclick="göm_header()">Remove header</button>
+            <button class="allaknappar" onclick="ändra_header()">Show header</button>
+        </div>
+
+    </div>
+</body>
+</html>
